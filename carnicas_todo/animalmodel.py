@@ -1,7 +1,7 @@
 from odoo import models, fields
 
 class animal(models.Model):
-    __name = "animal.CarnicasModule"
+    __name = "animal"
 
     raza = fields.Char("Raza")
     edad = fields.Char("Edad")

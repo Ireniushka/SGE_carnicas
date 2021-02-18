@@ -1,23 +1,26 @@
 <odoo>
-    <record id="view_tree_carnica" model="ir.ui.view">
-        <field name="name">view.tree.todo</field>
-        <field name="model">animal.CarnicasModule</field>
+    <record id="view_tree_animal" model="ir.ui.view">
+        <field name="name">view.tree.animal</field>
+        <field name="model">animal</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="id"/>
-                <field name="Raza"/>
-                <field name="Edad"/>
-                <field name="Matadero"/>
-                <field name="Fecha_sacr"/>
+                <field name="raza"/>
+                <field name="edad"/>
+                <field name="matadero"/>
+                <field name="fecha_sacr"/>
             </tree>
         </field>
     </record>
 
-    <record id="action_view_todo" model="ir.action.act_window">
+    <!-- <record id="action_view_animal" model="ir.action.act_window">
         <field name="name">Lista de reses</field>
-        <field name="res_model">animal.CarnicasModule</field>
+        <field name="res_model">animal</field>
         <field name="view_mode">tree, form</field>
-    </record>
+    </record> -->
 
-    <menuitem id="menu_todo" parent="" action="carnicas_todo.action_view_todo"/>
+    <act_window id="action_view_animal" name="Lista de reses" res_model="animal" 
+             view_mode="tree,form"/>
+
+    <menuitem id="menu_todo" parent="" action="action_view_animal"/>
 </odoo>
