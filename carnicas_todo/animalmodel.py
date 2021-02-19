@@ -5,5 +5,5 @@ class animal(models.Model):
 
     raza = fields.Char("Raza")
     edad = fields.Char("Edad")
-    matadero = fields.Char("Matadero")
+    matadero = fields.Selection(selection=[("cadiz", "Cádiz"),("jerez","Jerez"),("sevilla","Sevilla")])
     fecha_sacr = fields.Date("Fecha_sacr")
