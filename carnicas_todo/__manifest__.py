@@ -2,6 +2,8 @@
     "name":"carnicas_todo",
     "data":[
         'views/views.xml',
-        'security.xml'
-    ]
+        'security.xml',
+        'reports/report_animal.xml'
+    ],
+    "depends":["base"]
 }
