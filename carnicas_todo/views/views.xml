@@ -9,7 +9,18 @@
                 <field name="edad"/>
                 <field name="matadero"/>
                 <field name="fecha_sacr"/>
+                <field name="precio"/>
+                <field name="ult_revision"/>
             </tree>
+        </field>
+    </record>
+
+    <record id="view_graph_animal" model="ir.ui.view">
+        <field name="model">animal</field>
+        <field name="arch" type="xml">
+            <graph>
+                <field name="fecha_sacr"></field>
+            </graph>
         </field>
     </record>
 
@@ -20,7 +31,7 @@
     </record> -->
 
     <act_window id="action_view_animal" name="Lista de reses" res_model="animal" 
-             view_mode="tree,form"/>
+             view_mode="tree,form,graph"/>
 
     <menuitem id="menu_todo" parent="" action="action_view_animal"/>
 </odoo>
