@@ -24,12 +24,6 @@
         </field>
     </record>
 
-    <!-- <record id="action_view_animal" model="ir.action.act_window">
-        <field name="name">Lista de reses</field>
-        <field name="res_model">animal</field>
-        <field name="view_mode">tree, form</field>
-    </record> -->
-
     <act_window id="action_view_animal" name="Lista de reses" res_model="animal" 
              view_mode="tree,form,graph"/>
 

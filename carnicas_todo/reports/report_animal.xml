@@ -34,6 +34,14 @@
                                     <td><strong>Fecha de sacrificio </strong></td>
                                     <td class="text-center"><span t-field="animal.fecha_sacr"></span></td>
                                 </tr>
+                                <tr>
+                                    <td><strong>Precio </strong></td>
+                                    <td class="text-center"><span t-field="animal.precio"></span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Última revisión veterinario </strong></td>
+                                    <td class="text-center"><span t-field="animal.ult_revision"></span></td>
+                                </tr>
                             </table>
                         </div>
                     </div>
