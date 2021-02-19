@@ -7,6 +7,7 @@
                 <field name="id"/>
                 <field name="raza"/>
                 <field name="edad"/>
+                <field name="peso"/>
                 <field name="matadero"/>
                 <field name="fecha_sacr"/>
                 <field name="precio"/>

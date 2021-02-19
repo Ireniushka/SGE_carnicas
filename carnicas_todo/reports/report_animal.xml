@@ -27,6 +27,10 @@
                                     <td class="text-center"><span t-field="animal.edad"></span></td>
                                 </tr>
                                 <tr>
+                                    <td><strong>Peso del animal </strong></td>
+                                    <td class="text-center"><span t-field="animal.peso"></span></td>
+                                </tr>
+                                <tr>
                                     <td><strong>Matadero que sacrificó al animal </strong></td>
                                     <td class="text-center"><span t-field="animal.matadero"></span></td>
                                 </tr>
